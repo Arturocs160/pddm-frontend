@@ -1,9 +1,5 @@
 export default function ProyectoPage() {
     return <div>
-        <head>
-            <link href="./output.css" rel="stylesheet"/>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-            </head>
             <div className="pt-40">
                 <div className="pl-10 text-black text-4xl font-bold">
                     <h1>PROYECTOS</h1>

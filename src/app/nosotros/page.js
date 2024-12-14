@@ -1,10 +1,6 @@
 
 export default function NosotrosPage() {
     return <div>
-        <head>
-            <link href="./output.css" rel="stylesheet"/>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-            </head>
             <div className="bg-gray-50 pt-40">
                 
                 <div className="pl-10 text-black text-4xl font-bold">

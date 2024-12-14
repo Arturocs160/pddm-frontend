@@ -1,10 +1,6 @@
 
 export default function ContactoPage() {
     return <div>
-         <head>
-            <link href="./output.css" rel="stylesheet"/>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-            </head>
             <div className="flex flex-row">
                 <div className="pt-40 w-3/4">
                     <div className="pl-10 text-black text-4xl font-bold">

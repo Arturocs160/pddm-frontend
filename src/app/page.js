@@ -2,11 +2,6 @@
 export default function HomePage() {
   return (
     <div>
-                  <head>
-            <link href="./output.css" rel="stylesheet"/>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-            <link rel="stylesheet" href="css/image.css" />
-            </head>
             <div className=" relative bottom-14 z-0">
                 <div className="top-0 bg-gray-300 carousel " >
                     <img src="assets/fondo.jpg" alt="" className="opacity-50 " />
