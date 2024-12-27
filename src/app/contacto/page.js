@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ContactoPage() {
   return (
     <div>
@@ -22,11 +24,11 @@ export default function ContactoPage() {
             </div>
             <div className="flex flex-row py-10 px-24 items-center text-2xl">
               <img src="assets/whastApp.png" alt="" width="50px" />
-              <p className="px-5">WhastApp</p>
+              <p className="px-5">WhatsApp</p>
             </div>
             <div className="flex flex-row py-10 px-24 items-center text-2xl">
               <img src="assets/tiktok.png" alt="" width="50px" />
-              <p className="px-5">TIktok</p>
+              <p className="px-5">Tiktok</p>
             </div>
           </div>
         </div>
@@ -53,7 +55,7 @@ export default function ContactoPage() {
           </div>
           <div className="flex justify-center py-10">
             <button className="bg-red-700 py-3 px-9 text-white text-xl">
-              <a href="/">Enviar</a>
+              <Link href="/">Enviar</Link>
             </button>
           </div>
         </div>

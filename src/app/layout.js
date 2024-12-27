@@ -1,5 +1,6 @@
 import "./globals.css";
-import Image from "next/image";
+import "../../public/css/image.css";
+import Link from "next/link";
 
 export const metadata = {
   title: "Perforación direccional de México",
@@ -9,11 +10,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <head>
-        <link href="./output.css" rel="stylesheet" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/image.css" />
-      </head>
       <body>
         <header>
           <div className="text-white absolute z-10 w-full">
@@ -42,22 +38,14 @@ export default function RootLayout({ children }) {
             </div>
             <div className="flex w-full justify-center">
               <div className="flex flex-row  justify-around bg-black text-white w-3/4 h-14 items-center relative bottom-5  shadow-xl">
-                <a href="/">INICIO</a>
-                <a href="/">NOSOTROS</a>
-                <a href="/">SERVICIOS</a>
-                <a href="/">PROYECTOS</a>
-                <a href="/">CONTACTO</a>
+                <Link href="/">INICIO</Link>
+                <Link href="/nosotros">NOSOTROS</Link>
+                <Link href="/servicios">SERVICIOS</Link>
+                <Link href="/proyectos">PROYECTOS</Link>
+                <Link href="/contacto">CONTACTO</Link>
               </div>
             </div>
           </div>
-          {/* <header>
-              <Image
-                src="/images.png"
-                alt="logo empresa"
-                width={200}
-                height={200}
-              ></Image>
-          </header> */}
         </header>
         {children}
         <footer>

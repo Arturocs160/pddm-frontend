@@ -1,0 +1,14 @@
+{
+    "idProyecto": "1",
+    "tituloProyecto": "lorem ipsum",
+    "descripcionProyecto" : "lorem ipsum",
+    "ubicacionPortada": "/assets/fondo.jpg",
+    "ubicacionImagenes": [
+        "/assets/fondo.jpg",
+        "/assets/fondo.jpg",
+        "/assets/fondo.jpg",
+        "/assets/fondo.jpg",
+        "/assets/fondo.jpg",
+        "/assets/fondo.jpg"
+    ]
+}

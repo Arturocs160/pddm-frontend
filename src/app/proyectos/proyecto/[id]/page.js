@@ -1,4 +1,5 @@
 export default function ProyectoPage() {
+
   return (
     <div>
       <div className="pt-40">
@@ -18,21 +19,21 @@ export default function ProyectoPage() {
               ipsa, officia laboriosam vitae!
             </div>
             <div className="row-start-2">
-              <img src="assets/fondo.jpg" alt="" />
+              <img src="/assets/fondo.jpg" alt="" />
             </div>
             <div className="row-start-2">
-              <img src="assets/fondo.jpg" alt="" />
+              <img src="/assets/fondo.jpg" alt="" />
             </div>
           </div>
           <div className="w-1/2 px-5 grid grid-cols-2 grid-rows-2 gap-4">
             <div className="col-span-2">
-              <img src="assets/fondo.jpg" alt="" />
+              <img src="/assets/fondo.jpg" alt="" />
             </div>
             <div className="row-start-2">
-              <img src="assets/fondo.jpg" alt="" />
+              <img src="/assets/fondo.jpg" alt="" />
             </div>
             <div className="row-start-2">
-              <img src="assets/fondo.jpg" alt="" />
+              <img src="/assets/fondo.jpg" alt="" />
             </div>
           </div>
         </div>

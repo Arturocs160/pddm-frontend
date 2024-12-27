@@ -1,16 +1,72 @@
+import Link from "next/link";
+import Carousel from "./components/carousel";
+
 export default function HomePage() {
+  const ejemploProyectos = [
+    {
+      idProyecto: "1",
+      tituloProyecto: "lorem ipsum",
+      descripcionProyecto: "lorem ipsum",
+      ubicacionPortada: "/assets/fondo.jpg",
+      ubicacionImagenes: [
+        "/assets/fondo.jpg",
+        "/assets/fondo.jpg",
+        "/assets/fondo.jpg",
+        "/assets/fondo.jpg",
+        "/assets/fondo.jpg",
+        "/assets/fondo.jpg",
+      ],
+    },
+    {
+      idProyecto: "2",
+      tituloProyecto: "dolor sit amet",
+      descripcionProyecto: "dolor sit amet",
+      ubicacionPortada: "/assets/fondo.jpg",
+      ubicacionImagenes: [
+        "/assets/fondo.jpg",
+        "/assets/fondo.jpg",
+        "/assets/fondo.jpg",
+        "/assets/fondo.jpg",
+        "/assets/fondo.jpg",
+        "/assets/fondo.jpg",
+      ],
+    },
+    {
+      idProyecto: "3",
+      tituloProyecto: "consectetur adipiscing",
+      descripcionProyecto: "consectetur adipiscing",
+      ubicacionPortada: "/assets/fondo.jpg",
+      ubicacionImagenes: [
+        "/assets/fondo.jpg",
+        "/assets/fondo.jpg",
+        "/assets/fondo.jpg",
+        "/assets/fondo.jpg",
+        "/assets/fondo.jpg",
+        "/assets/fondo.jpg",
+      ],
+    },
+    {
+      idProyecto: "4",
+      tituloProyecto: "consectetur adipiscing",
+      descripcionProyecto: "consectetur adipiscing",
+      ubicacionPortada: "/assets/fondo.jpg",
+      ubicacionImagenes: [
+        "/assets/fondo.jpg",
+        "/assets/fondo.jpg",
+        "/assets/fondo.jpg",
+        "/assets/fondo.jpg",
+        "/assets/fondo.jpg",
+        "/assets/fondo.jpg",
+      ],
+    },
+  ];
+
   return (
     <div>
       <div className=" relative bottom-14 z-0">
         <div className="top-0 bg-gray-300 carousel ">
-          <img src="assets/fondo.jpg" alt="" className="opacity-50 " />
-          <div>
-            <div className="bg-red-700 w-5 h-44 relative bottom-80 left-11 "></div>
-            <h1 className="relative bottom-96 left-20 text-5xl text-white">
-              TEXTO
-            </h1>
-          </div>
-        </div>
+          <Carousel />
+        </div> 
       </div>
       <div className="bg-gray-50 flex flex-row relative bottom-24">
         <div className="p-20 w-1/2">
@@ -64,31 +120,23 @@ export default function HomePage() {
         <h1 className="pb-5 text-4xl text-center font-bold">
           ÚLTIMOS PROYECTOS
         </h1>
-        <div className="flex flex-row">
-          <div className="flex justify-center flex-col items-center ">
-            <img className="opacity-75" src="assets/i1.jpg" alt="" />
-            <button className="bg-red-700 text-white relative bottom-6 w-3/4 h-7 relative bottom-12">
-              <a href="/">TITULO</a>
-            </button>
-          </div>
-          <div className="flex justify-center flex-col items-center ">
-            <img className="opacity-75" src="assets/i1.jpg" alt="" />
-            <button className="bg-red-700 text-white relative bottom-6 w-3/4 h-7 relative bottom-12">
-              <a href="/">TITULO</a>
-            </button>
-          </div>
-          <div className="flex justify-center flex-col items-center ">
-            <img className="opacity-75" src="assets/i1.jpg" alt="" />
-            <button className="bg-red-700 text-white relative bottom-6 w-3/4 h-7 relative bottom-12">
-              <a href="/">TITULO</a>
-            </button>
-          </div>
-          <div className="flex justify-center flex-col items-center ">
-            <img className="opacity-75" src="assets/i1.jpg" alt="" />
-            <button className="bg-red-700 text-white relative bottom-6 w-3/4 h-7 relative bottom-12">
-              <a href="/">TITULO</a>
-            </button>
-          </div>
+        <div className="flex flex-row grid grid-cols-4 px-5">
+          {ejemploProyectos.map((proyecto) => {
+            return (
+              <div
+                className="flex justify-center flex-col items-center"
+                key={proyecto.idProyecto}
+              >
+                {/* En el src se tiene cambiar por el que se ponga en el proyecto, lo dejo asi para que no se desacomode */}
+                <img className="opacity-75" src="/assets/i1.jpg" alt="" />
+                <button className="bg-red-700 text-white relative bottom-6 w-3/4 h-7 relative bottom-12">
+                  <Link href={`/proyectos/proyecto/${proyecto.idProyecto}`}>
+                    {proyecto.tituloProyecto}
+                  </Link>
+                </button>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
