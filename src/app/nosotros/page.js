@@ -25,7 +25,7 @@ export default function NosotrosPage() {
           <div className="bg-red-700 p-8">
             <h1 className="text-4xl text-start font-bold">Misión</h1>
             <hr className="w-3/5 border-2 border-white" />
-            <p>
+            <p className="pt-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -35,7 +35,7 @@ export default function NosotrosPage() {
           <div className="bg-black p-8">
             <h1 className="text-4xl text-start font-bold">Vision</h1>
             <hr className="w-3/5 border-2 border-white" />
-            <p>
+            <p className="pt-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -43,10 +43,10 @@ export default function NosotrosPage() {
             </p>
           </div>
         </div>
-        <div className="bg-gray-300 w-1/2 p-8">
+        <div className="bg-gray-300 w-1/2 p-8 flex flex-col items-end justify-start">
           <h1 className="text-4xl text-end font-bold">Politicas de calidad</h1>
-          <hr />
-          <p>
+          <hr className="w-3/5 border-2 border-black alig-end"/>
+          <p className="pt-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

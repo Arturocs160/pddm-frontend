@@ -7,7 +7,7 @@ export default function ServiciosPage() {
             <h1>SERVICIOS</h1>
             <hr className="w-2/5 border-2 border-black" />
           </div>
-          <h2 className="pl-10 py-5">TITULO</h2>
+          <h2 className="pl-10 py-5 text-black text-4xl font-bold">TITULO</h2>
           <div className="flex flex-row px-10">
             <div className="w-1/2 ">
               <img src="assets/fondo.jpg" alt="" />
@@ -23,14 +23,14 @@ export default function ServiciosPage() {
             </div>
           </div>
         </div>
-        <div className=" pt-60 w-1/4 bg-gray-300 px-5">
+        <div className=" pt-60 w-1/4 bg-gray-300 px-5 text-black text-2xl font-bold">
           <h1> Últimos proyectos</h1>
-          <hr />
+          <hr className="w-3/5 border-2 border-black"/>
           <div className="flex flex-row pt-10">
             <div className="w-1/2 px-5">
               <img src="assets/fondo.jpg" alt="" />
             </div>
-            <div className="w-1/2 flex items-center">
+            <div className="w-1/2 flex items-center text-black text-xl font-semibold">
               <h4>Titulo</h4>
             </div>
           </div>

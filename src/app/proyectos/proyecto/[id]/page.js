@@ -11,28 +11,28 @@ export default function ProyectoPage() {
           <h1>TITULO</h1>
         </div>
         <div className="flex flex-row ">
-          <div className=" w-1/2 px-5 grid grid-cols-2 grid-rows-2 gap-4">
-            <div className="col-span-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quo
-              architecto vitae! Quod dolores illum officiis vero alias velit
-              iure nobis blanditiis inventore asperiores mollitia similique
-              ipsa, officia laboriosam vitae!
-            </div>
-            <div className="row-start-2">
-              <img src="/assets/fondo.jpg" alt="" />
-            </div>
-            <div className="row-start-2">
-              <img src="/assets/fondo.jpg" alt="" />
-            </div>
+          <div className=" w-1/2 px-5 bg-blue-200 text-xl">
+          <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat
+          </p>            
           </div>
-          <div className="w-1/2 px-5 grid grid-cols-2 grid-rows-2 gap-4">
-            <div className="col-span-2">
+          <div className=" w-1/2 px-5 grid grid-cols-2 grid-rows-3 gap-4 bg-yellow-200">
+            <div className=" project col-span-2">
               <img src="/assets/fondo.jpg" alt="" />
             </div>
-            <div className="row-start-2">
+            <div className=" project row-start-2">
               <img src="/assets/fondo.jpg" alt="" />
             </div>
-            <div className="row-start-2">
+            <div className=" project row-start-2">
+              <img src="/assets/fondo.jpg" alt="" />
+            </div>
+            <div className="project" >
+              <img src="/assets/fondo.jpg" alt="" />
+            </div>
+            <div className=" project row-start-3">
               <img src="/assets/fondo.jpg" alt="" />
             </div>
           </div>
